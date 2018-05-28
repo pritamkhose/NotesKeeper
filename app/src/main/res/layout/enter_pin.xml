@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/msg"
+        android:padding="15dp"
+        android:text="Enter Pin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/pin1"
+        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:digits="1234567890"
+        android:textAlignment="center"
+        android:hint="Enter pin"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/pin2"
+        android:padding="10dp"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:textAlignment="center"
+        android:hint="Repeat pin"
+        android:background="@color/white"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

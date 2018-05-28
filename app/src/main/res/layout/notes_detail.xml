@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/noteid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <!--<TableRow>-->
+
+            <!--<TextView-->
+            <!--android:stretchColumns="0"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:id="@+id/date"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Created\n12 Oct 2017 11:07 PM"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:textSize="12sp" />-->
+
+            <ImageButton
+                android:id="@+id/colorpicker"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_compass" />
+
+
+            <ImageButton
+                android:id="@+id/secure"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_secure" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_delete" />
+
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_share" />
+
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_save"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+            <!--</TableRow>-->
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="right|bottom"
+            android:id="@+id/time_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:layout_below="@+id/header"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_item"
+            android:hint="Enter Title"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/headercolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="headercolor"
+            android:text="0"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:hint="Enter Description"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
